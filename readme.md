@@ -11,5 +11,5 @@
 | 10   | :white_check_mark:   | [객체 리터럴](/10%EC%9E%A5%20%EA%B0%9D%EC%B2%B4%20%EB%A6%AC%ED%84%B0%EB%9F%B4.md)                                                     | 2022-08-02      |
 | 11   | :white_check_mark:   | [원시 값과 객체의 비교](/11%EC%9E%A5%20%EC%9B%90%EC%8B%9C%20%EA%B0%92%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EB%B9%84%EA%B5%90.md) | 2022-08-03      |
 | 12   | :white_check_mark:   | [함수](/12%EC%9E%A5%20%ED%95%A8%EC%88%98.md)                                                                                          | 2022-08-04 ~ 05 |
-| 13   | :white_large_square: | [스코프](/13%EC%9E%A5%20%EC%8A%A4%EC%BD%94%ED%94%84.md)                                                                               | 2022-08-08      |
+| 13   | :white_check_mark:  | [스코프](/13%EC%9E%A5%20%EC%8A%A4%EC%BD%94%ED%94%84.md)                                                                               | 2022-08-08      |
 | 14   | :white_large_square: | [전역 변수의 문제점](전역-변수의-문제점.md)                                                                                           |                 |
