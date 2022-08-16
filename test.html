@@ -10,9 +10,26 @@
 
 <body>
     <script>
-        Object.getOwnPropertyDescriptor(Object.prototype, '__proto__');
-        Object.getOwnPropertyDescriptor(function () { }, 'prototype');
+        function foo() { }
+        const bar = function () { };
+        const baz = {
+            x: function () { },
+        };
 
+        new foo(); // -> foo {}
+        new bar(); // -> bar {}
+        new baz.x(); // -> x {}
+
+        const arrow = () => { };
+
+        new arrow(); // TypeError: arrow is not a constructor
+
+        // 메서드 정의: ES6의 메서드 축약 표현만을 메서드로 인정한다.
+        const obj = {
+            x() { },
+        };
+
+        new obj.x(); // TypeError: obj.x is not a constructo
     </script>
 </body>
 

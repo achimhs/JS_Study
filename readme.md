@@ -15,3 +15,4 @@
 | 14   | :white_check_mark: | [전역 변수의 문제점](/14%EC%9E%A5%20%EC%A0%84%EC%97%AD%20%EB%B3%80%EC%88%98%EC%9D%98%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)                                                                  | 2022-08-09      |
 | 15   | :white_check_mark: | [let, const 키워드와 블록 레벨 스코프](/15%EC%9E%A5%20let%2C%20const%20%ED%82%A4%EC%9B%8C%EB%93%9C%EC%99%80%20%EB%B8%94%EB%A1%9D%20%EB%A0%88%EB%B2%A8%20%EC%8A%A4%EC%BD%94%ED%94%84.md) | 2022-08-10      |
 | 16   | :white_check_mark: | [프로퍼티 어트리뷰트](/16%EC%9E%A5%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%8A%B8.md)                                                           | 2022-08-11      |
+| 17   | :white_check_mark: | [생성자 함수에 의한 객체 생성](/17%EC%9E%A5%20%EC%83%9D%EC%84%B1%EC%9E%90%20%ED%95%A8%EC%88%98%EC%97%90%20%EC%9D%98%ED%95%9C%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1.md)              | 2022-08-16      |
