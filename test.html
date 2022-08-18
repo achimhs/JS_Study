@@ -10,26 +10,12 @@
 
 <body>
     <script>
-        function foo() { }
-        const bar = function () { };
-        const baz = {
-            x: function () { },
-        };
+        function square(number) {
+            return number * number;
+        }
 
-        new foo(); // -> foo {}
-        new bar(); // -> bar {}
-        new baz.x(); // -> x {}
-
-        const arrow = () => { };
-
-        new arrow(); // TypeError: arrow is not a constructor
-
-        // 메서드 정의: ES6의 메서드 축약 표현만을 메서드로 인정한다.
-        const obj = {
-            x() { },
-        };
-
-        new obj.x(); // TypeError: obj.x is not a constructo
+        // 객체의 속성을 계층 구조로 출력한다.
+        console.dir(square);
     </script>
 </body>
 
