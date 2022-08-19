@@ -10,12 +10,26 @@
 
 <body>
     <script>
-        function square(number) {
-            return number * number;
+        function Mind(value) {
+            this.heart = value;
+            this.sendHeart = function () {
+                return this.heart ** 2 + 200;
+            };
         }
 
-        // 객체의 속성을 계층 구조로 출력한다.
-        console.dir(square);
+        Mind.prototype.giveHeart = function () {
+            return this.heart + 200;
+        };
+
+        const mind1 = new Mind(2);
+        const mind2 = new Mind(3);
+
+        console.log(mind1.sendHeart === mind2.sendHeart); // ⓐ
+        console.log(mind1.giveHeart === mind2.giveHeart); // ⓑ
+        console.log(mind1.sendHeart()); // ⓒ
+        console.log(mind1.giveHeart()); // ⓓ
+        console.log(mind2.sendHeart()); // ⓔ
+        console.log(mind2.giveHeart()); // ⓕ
     </script>
 </body>
 
