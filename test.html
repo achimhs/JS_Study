@@ -10,9 +10,23 @@
 
 <body>
     <script>
-        const arr = [1, 2, 3];
-        arr.x = 10; // 배열도 객체이므로 프로퍼티를 가질 수 있다.
-        console.log(arr);
+        (function (a) {
+            "use strict";
+
+            a = 2;
+
+            function park() {
+                console.log(this); // ⓐ
+            }
+            park();
+
+            function Park() {
+                console.log(this); // Park
+            }
+            new Park();
+
+            console.log(arguments); // ⓑ
+        })(3);
     </script>
 </body>
 
