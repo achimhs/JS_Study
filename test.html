@@ -10,23 +10,31 @@
 
 <body>
     <script>
-        (function (a) {
-            "use strict";
+        console.log(Person); // ReferenceError: Cannot access 'Person' before initialization
 
-            a = 2;
-
-            function park() {
-                console.log(this); // ⓐ
+        class Person {
+            constructor(name) {
+                this.name = name;
             }
-            park();
 
-            function Park() {
-                console.log(this); // Park
+            static sayHello() {
+                console.log("Hello!");
             }
-            new Park();
 
-            console.log(arguments); // ⓑ
-        })(3);
+            sayHi() {
+                console.log(`Hi! My name is ${this.name}`);
+            }
+        }
+
+        const me = new Person("Park");
+
+        console.log(typeof Person); // function
+        // 인스턴스의 프로퍼티 참조
+        console.log(me.name); // Park
+        // 정적 메서드 호출
+        Person.sayHello(); // Hello!
+        // 프로토타입 메서드 호출
+        me.prototype.sayHi(); // Hi! My name is Park
     </script>
 </body>
 
